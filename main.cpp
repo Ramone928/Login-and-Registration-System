@@ -7,7 +7,7 @@ using namespace std;
 bool IsLoggedIn(){
     string username, password, un, pw;
     cout << "Enter username:"; cin >> username;
-    cout << "Enter passowrd"; cin >> password;
+    cout << "Enter passowrd:"; cin >> password;
 
     ifstream read("data\\" + username + ".txt");
     getline(read, un);
@@ -23,6 +23,7 @@ bool IsLoggedIn(){
 
 int main(){
     int choice; 
+
 
     cout << "1: Register\n2: Login\nYour choice: "; cin >> choice;
     if (choice == 1){
